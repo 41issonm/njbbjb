@@ -18,4 +18,6 @@ public class CarregarEmpresaUC {
     public List<EmpresaProjection> executar(){
         return empresaRepository.carregar();
     }
+
+
 }

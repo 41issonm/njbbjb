@@ -7,7 +7,15 @@ import java.util.List;
 
 public interface EmpresaRepository {
 
-    List<EmpresaProjection> carregar();
+        List<EmpresaProjection> carregar();
 
-    Empresa save(Empresa empresa);
-}
+        EmpresaProjection save(Empresa empresa);
+
+        void deletarPorCodigo(Long codigo);
+
+        EmpresaProjection atualizar(EmpresaProjection empresa);
+
+        EmpresaProjection buscarPorCodigo(Long codigo);
+
+        List<EmpresaProjection> buscarTodas();
+    }

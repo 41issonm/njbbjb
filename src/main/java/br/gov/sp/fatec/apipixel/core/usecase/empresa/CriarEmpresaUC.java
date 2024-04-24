@@ -27,7 +27,5 @@ public class CriarEmpresaUC {
 
         empresaRepository.salvar(novaEmpresa);
 
-        // Carregar a empresa recém-criada e retornar a projeção
-        return empresaRepository.carregarPorId(novaEmpresa.getId());
     }
 }
